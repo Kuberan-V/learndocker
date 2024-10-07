@@ -6,9 +6,9 @@ import org.springframework.web.bind.annotation.RestController;
 
 @RestController
 public class Controller {
-    @GetMapping("/learn/{firstname}")
-    public String learnDoc(@PathVariable String firstname){
-        return "Hi this a learning docker - "+firstname;
+    @GetMapping("/learn/{name}")
+    public String learnDoc(@PathVariable String name){
+        return "Hi this a learning docker - "+name;
 
     }
 }
